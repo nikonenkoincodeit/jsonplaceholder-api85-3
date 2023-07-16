@@ -9,7 +9,6 @@ tBodyEL.addEventListener("click", handlerClickElement);
 function wrapper() {
   getList("users")
     .then((date) => {
-      // console.log(date);
       const list = markupUsers(date);
       createMarkup(tBodyEL, list);
     })
